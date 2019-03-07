@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Gj-t0-Z76">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6OU-HS-w7X">
+            <objects>
+                <navigationController id="3Gj-t0-Z76" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lys-4Q-TpP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fFo-Pa-oOa" kind="relationship" relationship="rootViewController" id="ZFv-MK-ids"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRA-A3-8sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1335" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ef4-5Y-KCQ">
+            <objects>
+                <viewController id="fFo-Pa-oOa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D8d-9Q-pEr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yMe-Zz-fNN">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0b6-iI-j2f"/>
+                                    <constraint firstAttribute="height" constant="192" id="yIV-KH-5XZ"/>
+                                </constraints>
+                                <string key="text">You wake up in your tent and you hear the soft chirpping fo birds in the distance. 
+
+You don't hear your two other friends moving about.
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s7-LC-f2w">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yRl-z2-YP9"/>
+                                </constraints>
+                                <state key="normal" title="Go back to sleep"/>
+                                <connections>
+                                    <segue destination="bwE-nN-YRU" kind="show" id="vdO-gG-Bhs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dox-Aj-KTh">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KJK-YA-BZ8"/>
+                                </constraints>
+                                <state key="normal" title="Step outside and review the campsite"/>
+                                <connections>
+                                    <segue destination="V8M-Pd-x0K" kind="show" id="Vxc-zz-Xij"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JjE-W0-Lrg" firstAttribute="bottom" secondItem="Dox-Aj-KTh" secondAttribute="bottom" constant="74" id="3D7-Gp-Gsn"/>
+                            <constraint firstItem="JjE-W0-Lrg" firstAttribute="bottom" secondItem="5s7-LC-f2w" secondAttribute="bottom" constant="27" id="Hxh-1T-g6J"/>
+                            <constraint firstItem="yMe-Zz-fNN" firstAttribute="centerX" secondItem="JjE-W0-Lrg" secondAttribute="centerX" id="UTj-gu-dNU"/>
+                            <constraint firstItem="Dox-Aj-KTh" firstAttribute="width" secondItem="D8d-9Q-pEr" secondAttribute="width" id="ZBd-IR-NK7"/>
+                            <constraint firstItem="yMe-Zz-fNN" firstAttribute="top" secondItem="JjE-W0-Lrg" secondAttribute="top" id="kP5-Kb-JrZ"/>
+                            <constraint firstItem="5s7-LC-f2w" firstAttribute="centerX" secondItem="JjE-W0-Lrg" secondAttribute="centerX" id="pm8-9w-bej"/>
+                            <constraint firstItem="Dox-Aj-KTh" firstAttribute="centerX" secondItem="JjE-W0-Lrg" secondAttribute="centerX" id="q8T-Xe-y0l"/>
+                            <constraint firstItem="5s7-LC-f2w" firstAttribute="width" secondItem="D8d-9Q-pEr" secondAttribute="width" id="zyX-qF-dt7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JjE-W0-Lrg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1uf-qO-0t2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSJ-Sp-7sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="-54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eMn-V2-2ns">
+            <objects>
+                <viewController id="V8M-Pd-x0K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2SO-Ld-etf" userLabel="StepOutOne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="05L-Hs-KNy">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="R0F-9M-GTS"/>
+                                    <constraint firstAttribute="width" constant="240" id="kc2-qU-LoF"/>
+                                </constraints>
+                                <string key="text">You step outside and look over the campsite. You notice that both of your friends tents are empty and one of them has a tear along the side.
+
+You look around but can't see your friends anywhere
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpM-2q-lBf">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ROa-lc-7Dc"/>
+                                </constraints>
+                                <state key="normal" title="Investigate the campsite and look for clues"/>
+                                <connections>
+                                    <segue destination="lH7-jM-b7U" kind="show" id="fF7-ZG-hfm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGd-Ge-d1m">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vRu-gL-wgW"/>
+                                </constraints>
+                                <state key="normal" title="Call out to your friends"/>
+                                <connections>
+                                    <segue destination="JiL-91-Lok" kind="show" id="Voz-FQ-fQU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0bM-0Y-YSW" firstAttribute="bottom" secondItem="DpM-2q-lBf" secondAttribute="bottom" constant="27" id="7Wn-DO-nce"/>
+                            <constraint firstItem="0bM-0Y-YSW" firstAttribute="bottom" secondItem="YGd-Ge-d1m" secondAttribute="bottom" constant="74" id="CaG-rC-Dp3"/>
+                            <constraint firstItem="YGd-Ge-d1m" firstAttribute="width" secondItem="2SO-Ld-etf" secondAttribute="width" id="DQJ-NQ-A6D"/>
+                            <constraint firstItem="DpM-2q-lBf" firstAttribute="width" secondItem="2SO-Ld-etf" secondAttribute="width" id="TsY-1v-qHK"/>
+                            <constraint firstItem="05L-Hs-KNy" firstAttribute="top" secondItem="0bM-0Y-YSW" secondAttribute="top" id="aDF-6i-qJC"/>
+                            <constraint firstItem="05L-Hs-KNy" firstAttribute="centerX" secondItem="0bM-0Y-YSW" secondAttribute="centerX" id="jbf-LT-MAU"/>
+                            <constraint firstItem="DpM-2q-lBf" firstAttribute="centerX" secondItem="0bM-0Y-YSW" secondAttribute="centerX" id="kzJ-gu-PTi"/>
+                            <constraint firstItem="YGd-Ge-d1m" firstAttribute="centerX" secondItem="0bM-0Y-YSW" secondAttribute="centerX" id="z0p-t4-C5s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0bM-0Y-YSW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nNs-il-9ec"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKC-24-DtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="-540"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MhQ-cN-r7G">
+            <objects>
+                <viewController id="bwE-nN-YRU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDQ-dk-DE0" userLabel="SleepIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UwT-Ql-bmm">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="hA2-fc-hNC"/>
+                                    <constraint firstAttribute="width" constant="240" id="iBK-A8-xeE"/>
+                                </constraints>
+                                <string key="text">You wake up a few hours later with the sun well into the sky.   
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft9-KB-H6R">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ecp-Mp-UUU"/>
+                                </constraints>
+                                <state key="normal" title="Step outside"/>
+                                <connections>
+                                    <segue destination="7Zd-gX-ybq" kind="show" id="jA2-fv-JYh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t27-QS-cUJ">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aHG-2y-UdW"/>
+                                </constraints>
+                                <state key="normal" title="Grab your phone to look at Reddit "/>
+                                <connections>
+                                    <segue destination="Cwc-G6-UE5" kind="show" id="iQj-Ap-Pt6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MLs-b6-Wr3" firstAttribute="bottom" secondItem="t27-QS-cUJ" secondAttribute="bottom" constant="74" id="2Kp-XV-vpr"/>
+                            <constraint firstItem="MLs-b6-Wr3" firstAttribute="bottom" secondItem="ft9-KB-H6R" secondAttribute="bottom" constant="27" id="AMT-3d-kA3"/>
+                            <constraint firstItem="UwT-Ql-bmm" firstAttribute="top" secondItem="MLs-b6-Wr3" secondAttribute="top" id="E8z-bi-1Td"/>
+                            <constraint firstItem="t27-QS-cUJ" firstAttribute="centerX" secondItem="MLs-b6-Wr3" secondAttribute="centerX" id="Qmt-Sm-Ub7"/>
+                            <constraint firstItem="ft9-KB-H6R" firstAttribute="width" secondItem="eDQ-dk-DE0" secondAttribute="width" id="ZzK-bp-6nI"/>
+                            <constraint firstItem="ft9-KB-H6R" firstAttribute="centerX" secondItem="MLs-b6-Wr3" secondAttribute="centerX" id="eES-p9-XjN"/>
+                            <constraint firstItem="UwT-Ql-bmm" firstAttribute="centerX" secondItem="MLs-b6-Wr3" secondAttribute="centerX" id="jip-TC-rt1"/>
+                            <constraint firstItem="t27-QS-cUJ" firstAttribute="width" secondItem="eDQ-dk-DE0" secondAttribute="width" id="t9o-T5-Xas"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MLs-b6-Wr3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xlk-yj-64l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OG-BT-Bxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="258"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pte-A3-gtT">
+            <objects>
+                <viewController id="lH7-jM-b7U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HQK-CH-YNF" userLabel="InvestigateCamp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2yk-8j-HaF">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6dg-Uq-JFW"/>
+                                    <constraint firstAttribute="height" constant="192" id="eFb-ZD-Zrv"/>
+                                </constraints>
+                                <string key="text">You see that your friends forgot to clean up. Odd they promised they would when you turned in early the night before. Something doesn't make sense
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilN-dJ-ZS8">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fkf-YO-5qH"/>
+                                </constraints>
+                                <state key="normal" title="search through your friends' stuff for clues"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-Jy-SeE">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D2C-Ab-Pcs"/>
+                                </constraints>
+                                <state key="normal" title="Investigate the campsite parking lot"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Er9-rC-AwO" firstAttribute="bottom" secondItem="ilN-dJ-ZS8" secondAttribute="bottom" constant="27" id="6V0-yX-l48"/>
+                            <constraint firstItem="ilN-dJ-ZS8" firstAttribute="centerX" secondItem="Er9-rC-AwO" secondAttribute="centerX" id="GY1-Kd-Kby"/>
+                            <constraint firstItem="2yk-8j-HaF" firstAttribute="centerX" secondItem="Er9-rC-AwO" secondAttribute="centerX" id="MPd-5N-ygm"/>
+                            <constraint firstItem="DLa-Jy-SeE" firstAttribute="width" secondItem="HQK-CH-YNF" secondAttribute="width" id="Uhz-Tb-CaJ"/>
+                            <constraint firstItem="DLa-Jy-SeE" firstAttribute="centerX" secondItem="Er9-rC-AwO" secondAttribute="centerX" id="ZWA-mZ-1IZ"/>
+                            <constraint firstItem="Er9-rC-AwO" firstAttribute="bottom" secondItem="DLa-Jy-SeE" secondAttribute="bottom" constant="74" id="cee-zG-kdZ"/>
+                            <constraint firstItem="2yk-8j-HaF" firstAttribute="top" secondItem="Er9-rC-AwO" secondAttribute="top" id="kiJ-bK-9KQ"/>
+                            <constraint firstItem="ilN-dJ-ZS8" firstAttribute="width" secondItem="HQK-CH-YNF" secondAttribute="width" id="raa-iY-Elr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Er9-rC-AwO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v88-TO-eNH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAc-Wc-phZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-378"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bgu-9j-Hid">
+            <objects>
+                <viewController id="JiL-91-Lok" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EI-qD-kiJ" userLabel="CallToFriends">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q1p-LP-bDn">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="oTs-hI-yDJ"/>
+                                    <constraint firstAttribute="height" constant="192" id="xOG-0V-pfM"/>
+                                </constraints>
+                                <string key="text">You call out to your friends for a few minutes and don't hear a reply.
+
+Then after you wait a few minutes you hear someone yell for help.
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-aw-TKK">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jy9-dQ-7nJ"/>
+                                </constraints>
+                                <state key="normal" title="Investigate the campsite"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-hO-nbV">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b62-HH-Ubu"/>
+                                </constraints>
+                                <state key="normal" title="Run in the direction of the cries for help"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DbD-hO-nbV" firstAttribute="centerX" secondItem="Fh6-fC-Fx4" secondAttribute="centerX" id="6du-gP-bFf"/>
+                            <constraint firstItem="Lmb-aw-TKK" firstAttribute="width" secondItem="3EI-qD-kiJ" secondAttribute="width" id="6e1-lR-FgM"/>
+                            <constraint firstItem="Fh6-fC-Fx4" firstAttribute="bottom" secondItem="Lmb-aw-TKK" secondAttribute="bottom" constant="27" id="V0k-qR-iBF"/>
+                            <constraint firstItem="Lmb-aw-TKK" firstAttribute="centerX" secondItem="Fh6-fC-Fx4" secondAttribute="centerX" id="Xzq-Ey-Thr"/>
+                            <constraint firstItem="Fh6-fC-Fx4" firstAttribute="bottom" secondItem="DbD-hO-nbV" secondAttribute="bottom" constant="74" id="Zht-dx-JNj"/>
+                            <constraint firstItem="q1p-LP-bDn" firstAttribute="centerX" secondItem="Fh6-fC-Fx4" secondAttribute="centerX" id="kFG-h0-QVo"/>
+                            <constraint firstItem="DbD-hO-nbV" firstAttribute="width" secondItem="3EI-qD-kiJ" secondAttribute="width" id="vb0-IR-WN1"/>
+                            <constraint firstItem="q1p-LP-bDn" firstAttribute="top" secondItem="Fh6-fC-Fx4" secondAttribute="top" id="wW0-hA-reV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fh6-fC-Fx4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hRy-O6-lwE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0T-XO-FyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-1105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kyv-iW-QJK">
+            <objects>
+                <viewController id="7Zd-gX-ybq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T6U-WA-nwK" userLabel="LookAtReddit">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SQt-d2-7Mo">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="Pod-pR-2Yd"/>
+                                    <constraint firstAttribute="width" constant="240" id="qhg-Ba-J8a"/>
+                                </constraints>
+                                <string key="text">When you walk outside one of your friend's tents are gone! That's weird, they didn't say anything to you before departing and where is your other friend?
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FC-Hs-Pxe">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="myd-7e-zIb"/>
+                                </constraints>
+                                <state key="normal" title="Read the note you see resting of the picnic table"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9o-wV-A82">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4hv-89-0q1"/>
+                                </constraints>
+                                <state key="normal" title="Investigate the campsite parking lot"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X9o-wV-A82" firstAttribute="centerX" secondItem="Tvd-8S-EvG" secondAttribute="centerX" id="0Lo-Rr-OVk"/>
+                            <constraint firstItem="SQt-d2-7Mo" firstAttribute="centerX" secondItem="Tvd-8S-EvG" secondAttribute="centerX" id="9o7-3G-UjP"/>
+                            <constraint firstItem="3FC-Hs-Pxe" firstAttribute="centerX" secondItem="Tvd-8S-EvG" secondAttribute="centerX" id="K3X-jg-ayc"/>
+                            <constraint firstItem="Tvd-8S-EvG" firstAttribute="bottom" secondItem="3FC-Hs-Pxe" secondAttribute="bottom" constant="27" id="W4a-XO-HqR"/>
+                            <constraint firstItem="SQt-d2-7Mo" firstAttribute="top" secondItem="Tvd-8S-EvG" secondAttribute="top" id="bwv-TG-Vzx"/>
+                            <constraint firstItem="X9o-wV-A82" firstAttribute="width" secondItem="T6U-WA-nwK" secondAttribute="width" id="qFd-ZG-N8D"/>
+                            <constraint firstItem="3FC-Hs-Pxe" firstAttribute="width" secondItem="T6U-WA-nwK" secondAttribute="width" id="sP8-db-1AJ"/>
+                            <constraint firstItem="Tvd-8S-EvG" firstAttribute="bottom" secondItem="X9o-wV-A82" secondAttribute="bottom" constant="74" id="zWe-DH-EGr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tvd-8S-EvG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NhV-li-opH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sM3-h7-iYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wdg-fL-0cf">
+            <objects>
+                <viewController id="Cwc-G6-UE5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ljX-dl-CAU" userLabel="StepOutTwo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r35-6d-e3f">
+                                <rect key="frame" x="67.5" y="64" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="UDN-PL-cAQ"/>
+                                    <constraint firstAttribute="height" constant="192" id="Viw-Ui-KgO"/>
+                                </constraints>
+                                <string key="text">Your instinct makes you grab your phone to see the latest memes. You realize that you have no service when you try to access the Reddit app.
+
+What do you do?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfk-IW-qLX">
+                                <rect key="frame" x="0.0" y="610" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V48-yI-EJq"/>
+                                </constraints>
+                                <state key="normal" title="Faint"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8e-0K-zHQ">
+                                <rect key="frame" x="0.0" y="563" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eVB-0R-k2Z"/>
+                                </constraints>
+                                <state key="normal" title="Scream in horror"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r35-6d-e3f" firstAttribute="centerX" secondItem="s6Q-eb-Jzk" secondAttribute="centerX" id="1kI-BX-41B"/>
+                            <constraint firstItem="t8e-0K-zHQ" firstAttribute="width" secondItem="ljX-dl-CAU" secondAttribute="width" id="3yH-xX-8lV"/>
+                            <constraint firstItem="t8e-0K-zHQ" firstAttribute="centerX" secondItem="s6Q-eb-Jzk" secondAttribute="centerX" id="521-5I-vhP"/>
+                            <constraint firstItem="Yfk-IW-qLX" firstAttribute="width" secondItem="ljX-dl-CAU" secondAttribute="width" id="Cae-B7-bnN"/>
+                            <constraint firstItem="s6Q-eb-Jzk" firstAttribute="bottom" secondItem="Yfk-IW-qLX" secondAttribute="bottom" constant="27" id="aYL-cy-BcS"/>
+                            <constraint firstItem="Yfk-IW-qLX" firstAttribute="centerX" secondItem="s6Q-eb-Jzk" secondAttribute="centerX" id="gBP-lS-bwJ"/>
+                            <constraint firstItem="r35-6d-e3f" firstAttribute="top" secondItem="s6Q-eb-Jzk" secondAttribute="top" id="gnY-fi-ZLq"/>
+                            <constraint firstItem="s6Q-eb-Jzk" firstAttribute="bottom" secondItem="t8e-0K-zHQ" secondAttribute="bottom" constant="74" id="q6h-PD-lkh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s6Q-eb-Jzk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0CO-dd-aPm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlC-Y4-EHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="1127"/>
+        </scene>
+    </scenes>
+</document>
