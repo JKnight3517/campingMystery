@@ -22,6 +22,10 @@ class campMysteryVC: UIViewController {
             navigationController.popToRootViewController(animated: true)
         }
     }
+    
+    deinit {
+        print("View controller deallocated")
+    }
 
 
 }
